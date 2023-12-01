@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Los 7 Mares Restaurante</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logotipo"><img data-src="assets/img/logo_pulpo.png"/></div> 
+                <div class="logo">
+                    
+                    <h2>Los 7 Mares Restaurante</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#bienvenido">Inicio</a>
+                    <a href="#sobre">Sobre Nosotros</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>LA MEJOR GASTRONOMIA ES LOS 7 MARES</h2>
+                    <a href="#menu" class="btn bordes">Ir al Menú</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="comida.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="bienvenida" id="bienvenido">Bienvenido a!</p>
+            <h1>LOS 7 MARES</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat delectus porro suscipit
+                architecto ab impedit accusantium quod voluptate quaerat odio sunt quisquam odit, sapiente aut esse
+                possimus nulla totam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eveniet placeat nesciunt harum
+                similique ab, illo debitis ullam ipsa labore quidem vitae sunt et quasi veritatis? Excepturi ex non
+                cumque.
+            </p>
+            <a href="#" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/img/nosotros2.webp" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/img/platillo_home.png" >
+                <img data-src="assets/img/Platillo_01.png" alt="plato con pasta">
+            </div>
+        </div>
+    </div>
+
+    <section class="menu contenedor">
+        <h2 class="texto-platillos" id="menu">Platillos populares</h2>
+        <div class="botones-platillos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="ensaladas btn btn-verde">Frescos</button>
+            <button class="pasta btn btn-verde">Caliente</button>
+            <button class="pizza btn btn-verde">Bebidas</button>
+            <button class="postres btn btn-verde">Postres</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/img/camarones.jpg" alt="ensalada">
+                <h2>Camarón Natural</h2>
+                <p>Camaron, ensalada, limon.</p>
+                <div class="precio">
+                    <p>$140.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                
+                        <script>
+                            function realizarCompra() {
+                                alert('¡GRACIAS POR SU COMPRA! :)');
+                            }
+
+                        </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/img/Coctel.jpg" alt="ensalada">
+                <h2>Ceviche</h2>
+                <p>Camaron, aguacate.</p>
+                <div class="precio">
+                    <p>$240.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img data-src="assets/img/platillo_home.png" alt="ensalada">
+                <h2>Ostiones amor</h2>
+                <p>Camaron, ostion, tostada, ensalada.</p>
+                <div class="precio">
+                    <p>$340.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/Platillo_01.png"  alt="pasta">
+                <h2>Pescado Fritos</h2>
+                <p>Pescado, Naranja agria.</p>
+                <div class="precio">
+                    <p>$200.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/jaiba.jpg" alt="pasta">
+                <h2>Tacos de Jaiba</h2>
+                <p>Jaiba, Tortilla de queso</p>
+                <div class="precio">
+                    <p>$250.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <img data-src="assets/img/atun.jpg" alt="pasta">
+                <h2>Medallón de Atún</h2>
+                <p>Atún asado, ensalada</p>
+                <div class="precio">
+                    <p>$340.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/oldf.jpg" alt="pizza">
+                <h2>Old Fashion</h2>
+                <div class="precio">
+                    <p>$440.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/mar.jpg" alt="pizza">
+                <h2>Margarita Clasica</h2>
+ 
+                <div class="precio">
+                    <p>$40.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pizza">
+                <img data-src="assets/img/mix.jpg" alt="pizza">
+                <h2>Mixologia sin alcohol</h2>
+                <div class="precio">
+                    <p>$40.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres1.webp" alt="postre">
+                <h2>Misel</h2>
+                <p>Chocolate, cereal.</p>
+                <div class="precio">
+                    <p>$140.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres2.webp" alt="postre">
+                <h2>Puddin</h2>
+                <p>Cerezas.</p>
+                <div class="precio">
+                    <p>$240.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="postre">
+                <img data-src="assets/img/postres3.webp" alt="postre">
+                <h2>Quinoa</h2>
+                <p>Crezas, arandanos, cereal.</p>
+                <div class="precio">
+                    <p>$140.0</p>
+                    <button onclick="realizarCompra()"><i class="fas fa-shopping-basket"></i></button>
+                    <script>
+                        function realizarCompra() {
+                            alert('¡GRACIAS POR SU COMPRA! :)');
+                        }
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="chef contenedor">
+        <h2 id="sobre">Sobre Nosotros</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>Una deliciosa tradición desde 2010, cuando se creó el primer eslabón en la ciudad de Cardenas, Tabasco.
+                </h3>
+                <p>
+                    El nombre de Los 7 Mares es una ofrenda al acueducto construido en la parte oriente de la ciudad Cardenas desde el 
+                    Siglo XIX, el cual era utilizado para irrigar los viejos cañaverales. Edificado con el clásico tabique de la región en forma de arcos; 
+                    aún se puede admirar esta construcción ahora patrimonio de la ciudad.</p>
+                <a href="#" class="btn btn-verde">Saber Más</a>
+            </div>
+            <div class="imagen-chef">
+                <img data-src="assets/img/chef.jpg" alt="fotografia del chef"/>
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3 id="contacto">Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Centro, Cardenas,Tab.</p>
+            <p><i class="fas fa-envelope"></i> los7mares@restaruant.mx</p>
+            <p><i class="fas fa-phone-alt"></i>+52 9371289109</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <form class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Sandyvel" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Carvajal" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje" >Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <img data-src="assets/img/logo_pulpo.png" alt="ensalada">
+            </div>
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Centro, H. Cardenas, Tabasco</p>
+                <p>C.P 86500</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Sabados y Jueves 7am - 11pm</p>
+                <p>+52 9371289109</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 7am - 11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+     
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2023 Los 7 Mares, desarrollado por Sandyvel</p>
+    </footer>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
